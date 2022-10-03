@@ -1,0 +1,74 @@
+@import './mixins';
+@import './variables';
+
+body{}
+
+.d-f{
+   display: flex;
+}
+
+.d-g{
+   display: grid;
+}
+
+.jc-sb{
+   justify-content: space-between;
+}
+
+.jc-c{
+   justify-content: center;
+}
+
+.ai-c{
+   align-items: center;
+}
+
+.fd-c{
+   flex-direction:column;
+}
+
+.fw-w{
+   flex-wrap: wrap;
+}
+
+
+.ta-c{
+   text-align: center;
+}
+
+.ta-e{
+   text-align: end;
+}
+
+.gtc-2{
+   grid-template-columns: repeat(2,1fr);
+
+   @include breakpoint(768px){
+      grid-template-columns: 1fr;
+   }
+}
+
+.gtc-3{
+   grid-template-columns: repeat(3,1fr);
+
+   @include breakpoint(768px){
+      grid-template-columns: 1fr;
+   }
+}
+
+.gtc-4{
+   grid-template-columns: repeat(4,1fr);
+
+   @include breakpoint(768px){
+      grid-template-columns: repeat(2,1fr);
+   }
+
+   @include breakpoint(425px){
+      grid-template-columns: 1fr;
+   }
+}
+
+
+
+
+
